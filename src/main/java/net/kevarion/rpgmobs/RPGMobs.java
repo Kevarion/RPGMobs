@@ -125,7 +125,7 @@ public final class RPGMobs extends JavaPlugin implements Listener {
         if (health > damage) {
             // If entity survived the hit
             health -= damage;
-            entity.setCustomName(Utils.color(mob.getName() + " &r&c" + (int) health + "/" + (int) mob.getMaxHealth() + "♥"));
+            entity.setCustomName(color(mob.getName() + " &r&c" + (int) health + "/" + (int) mob.getMaxHealth() + "♥"));
         }
         Location loc = entity.getLocation().clone().add(getRandomOffset(), 1, getRandomOffset());
         world.spawn(loc, ArmorStand.class, armorStand -> {
