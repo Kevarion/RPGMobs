@@ -26,7 +26,7 @@ public class Utils {
         ItemMeta meta = item.getItemMeta();
         if (glow) {
             meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
-            meta.addEnchant(Enchantment.UNBREAKING, 1, true);
+            meta.addEnchant(Enchantment.DURABILITY, 1, true);
         }
         if (unbreakable) meta.setUnbreakable(true);
         if (hideUnb) meta.addItemFlags(ItemFlag.HIDE_UNBREAKABLE);

@@ -1,6 +1,5 @@
 package net.kevarion.rpgmobs.components;
 
-import com.mongodb.client.model.fill.LinearFillOutputField;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.attribute.Attribute;
@@ -9,10 +8,8 @@ import org.bukkit.entity.LivingEntity;
 import org.bukkit.inventory.EntityEquipment;
 import org.bukkit.inventory.ItemStack;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.function.LongToDoubleFunction;
 
 import static net.kevarion.rpgmobs.Utils.*;
 

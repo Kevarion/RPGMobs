@@ -1,6 +1,6 @@
 name: RPGMobs
 version: '${project.version}'
 main: net.kevarion.rpgmobs.RPGMobs
-api-version: '1.21'
+api-version: '1.16'
 authors: [Kevarion]
 description: RPG Mobs plugin
