@@ -43,7 +43,7 @@ public enum CustomMob {
     public LivingEntity spawn(Location location) {
         LivingEntity entity = (LivingEntity) location.getWorld().spawnEntity(location, type);
         entity.setCustomNameVisible(true);
-        entity.setCustomName(color(name + " &r&c" + (int) maxHealth + "/" + (int) maxHealth + "♥"));
+        entity.setCustomName(color(name + " &r&c" + (int) maxHealth + "/" + (int) maxHealth + "❤"));
         entity.getAttribute(Attribute.GENERIC_MAX_HEALTH).setBaseValue(maxHealth);
         entity.setHealth(maxHealth);
         EntityEquipment inv = entity.getEquipment();
