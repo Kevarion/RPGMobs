@@ -2,13 +2,11 @@ package net.kevarion.rpgmobs;
 
 import net.kevarion.rpgmobs.components.CustomMob;
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.Location;
 import org.bukkit.World;
 import org.bukkit.block.Block;
-import org.bukkit.entity.ArmorStand;
-import org.bukkit.entity.Entity;
-import org.bukkit.entity.EntityType;
-import org.bukkit.entity.LivingEntity;
+import org.bukkit.entity.*;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDamageEvent;
@@ -92,6 +90,7 @@ public final class RPGMobs extends JavaPlugin implements Listener {
                         }
                     }
                     entities.put(typeToSpawn.spawn(loc), typeToSpawn);
+                    Bukkit.broadcastMessage(ChatColor.GREEN + "Spawned entity!");
                 }
 
             }

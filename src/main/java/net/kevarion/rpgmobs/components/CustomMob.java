@@ -18,7 +18,9 @@ public enum CustomMob {
 
     DESERT_RISEN("&6Desert Risen", 15, 60, EntityType.HUSK, null, null, new LootItem(createItem(Material.ROTTEN_FLESH, 1, false, false, false, "&fPreserved Flesh", "&7A preserved flesh from a rotting corpse", "not sure what you'd want this for, though", "&7", "&9Foodstuff"), 1, 3, 100)),
 
-    SKELETAL_MAGE("&dSkeletal Mage", 20, 15, EntityType.SKELETON, createItem(Material.BONE, 1, true, false, false, null), makeArmorSet(new ItemStack(Material.IRON_HELMET), null, new ItemStack(Material.IRON_LEGGINGS), null), new LootItem(createItem(Material.BONE, 1, true, false, false, "&dBone Wand", "&7A wand made from skeletal mage", "&7", "&9Skeletal Bones"), 30), new LootItem(new ItemStack(Material.BONE), 1, 3, 100))
+    SKELETAL_MAGE("&dSkeletal Mage", 20, 15, EntityType.SKELETON, createItem(Material.BONE, 1, true, false, false, null), makeArmorSet(new ItemStack(Material.IRON_HELMET), null, new ItemStack(Material.IRON_LEGGINGS), null), new LootItem(createItem(Material.BONE, 1, true, false, false, "&dBone Wand", "&7A wand made from skeletal mage", "&7", "&9Skeletal Bones"), 30), new LootItem(new ItemStack(Material.BONE), 1, 3, 100)),
+
+    WITHERING_TITAN("&0Withering Titan", 350, 2.5, EntityType.WITHER_SKELETON, createItem(Material.COAL,1, true, false, false, null), makeArmorSet(null, null, new ItemStack(Material.DIAMOND_LEGGINGS), new ItemStack(Material.DIAMOND_BOOTS)), new LootItem(createItem(Material.COAL, 1, true, false, false, "&8Withering Relic", "&7A relic made of the remains of ancient withers..", "&7what can you do with this?"), 20), new LootItem(new ItemStack(Material.COAL), 1, 5, 100))
     ;
 
     private String name;
